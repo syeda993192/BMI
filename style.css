@@ -55,3 +55,27 @@
   button:hover {
     background-color: #45a049;
   }
+
+  .result {
+    margin-top: 20px;
+  }
+  
+  #bmiOutput {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  @media (max-width: 600px) {
+    .container {
+      padding: 15px;
+    }
+  
+    button {
+      font-size: 14px;
+    }
+  
+    #bmiOutput {
+      font-size: 16px;
+    }
+  }
