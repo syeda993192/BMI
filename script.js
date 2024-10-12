@@ -22,3 +22,8 @@ function calculateBMI(weight, height) {
     const weight = parseFloat(document.getElementById('weight').value);
     const height = parseFloat(document.getElementById('height').value);
     
+     // Validate inputs
+     if (isNaN(weight) || isNaN(height) || weight <= 0 || height <= 0) {
+            document.getElementById('bmiOutput').textContent = "Please enter valid, positive numbers for weight and height.";
+            return;
+          }
