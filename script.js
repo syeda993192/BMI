@@ -27,3 +27,13 @@ function calculateBMI(weight, height) {
             document.getElementById('bmiOutput').textContent = "Please enter valid, positive numbers for weight and height.";
             return;
           }
+
+     // Calculate BMI
+     const bmi = calculateBMI(weight, height).toFixed(2);
+    
+     // Get BMI category
+     const category = getBMICategory(bmi);
+     
+     // Display the result
+     document.getElementById('bmiOutput').textContent = `Your BMI is ${bmi} (${category})`;
+   });      
