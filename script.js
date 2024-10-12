@@ -15,3 +15,10 @@ function calculateBMI(weight, height) {
       return 'Obesity';
     }
   }
+
+   // Event listener for the Calculate BMI button
+   document.getElementById('calculateBtn').addEventListener('click', function () {
+    // Retrieve input values
+    const weight = parseFloat(document.getElementById('weight').value);
+    const height = parseFloat(document.getElementById('height').value);
+    
